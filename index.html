@@ -1,1 +1,380 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Studio | Discord & Roblox</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #090909;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffd000, #ff7a00, #ff2d1f);
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 110px 20px;
+            background:
+                radial-gradient(circle at center, #2c1d00, #090909 65%);
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #ffd000, #ff7a00, #ff2d1f);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            background: linear-gradient(90deg, #ffd000, #ff7a00, #ff2d1f);
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #ffad00;
+            margin-bottom: 20px;
+            font-size: 23px;
+        }
+
+        .item {
+            padding: 13px 0;
+            border-bottom: 1px solid #292929;
+            color: #ddd;
+            line-height: 1.4;
+        }
+
+        .price {
+            display: block;
+            color: white;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .info {
+            max-width: 900px;
+            margin: auto;
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 15px;
+            padding: 25px;
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #292929;
+            color: #777;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">STUDIO</div>
+
+    <nav>
+        <a href="#uslugi">Usługi</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#zasady">Zasady</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1>Witaj w <span class="gradient">Studio</span></h1>
+
+    <p>
+        Usługi Discord, Roblox oraz pomoc techniczna.
+    </p>
+
+    <a class="button"
+       href="https://discord.gg/KZXU5SXH6"
+       target="_blank">
+        DOŁĄCZ NA DISCORD
+    </a>
+</section>
+
+
+<section id="uslugi">
+    <h2>Nasze usługi</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Discord</h3>
+            <p>
+                Kopie serwerów, odtwarzanie, konfiguracja kanałów,
+                rang oraz uprawnień.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Nauka</h3>
+            <p>
+                Nauka konfiguracji oraz kopiowania serwerów Discord.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Roblox</h3>
+            <p>
+                Usługi związane z serwerami prywatnymi
+                Emergency Hamburg.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Pomoc techniczna</h3>
+            <p>
+                Pomoc przy botach, serwerach i konfiguracji.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="cennik">
+    <h2>Cennik</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Discord</h3>
+
+            <div class="item">
+                Podstawowa kopia serwera
+                <span class="price">15 zł / 150 R$</span>
+            </div>
+
+            <div class="item">
+                Pełne odtworzenie serwera
+                <span class="price">30 zł / 300 R$</span>
+            </div>
+
+            <div class="item">
+                Rozbudowane odtworzenie
+                <span class="price">50 zł / 500 R$</span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h3>Nauka</h3>
+
+            <div class="item">
+                Nauka kopiowania serwera
+                <span class="price">50 zł / 500 R$</span>
+            </div>
+
+            <div class="item">
+                Konfiguracja serwera od podstaw
+                <span class="price">20 zł / 200 R$</span>
+            </div>
+
+            <div class="item">
+                Indywidualna pomoc
+                <span class="price">10 zł / 100 R$</span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h3>Roblox — Emergency Hamburg</h3>
+
+            <div class="item">
+                Wypożyczenie serwera prywatnego
+                <span class="price">25 zł / 250 R$</span>
+            </div>
+
+            <div class="item">
+                Wypożyczenie na 2 tyg.
+                <span class="price">20 zł / 200 R$</span>
+            </div>
+
+            <div class="item">
+                Wypożyczenie — negocjacja
+                <span class="price">?? zł / ?? R$</span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <h3>Dodatkowe usługi</h3>
+
+            <div class="item">
+                Konfiguracja kanałów Discord + uprawnienia
+                <span class="price">15 zł / 150 R$</span>
+            </div>
+
+            <div class="item">
+                Konfiguracja rang i uprawnień
+                <span class="price">15 zł / 150 R$</span>
+            </div>
+
+            <div class="item">
+                Podstawowa struktura serwera
+                <span class="price">10 zł / 100 R$</span>
+            </div>
+
+            <div class="item">
+                Pomoc techniczna
+                <span class="price">10 zł / 100 R$</span>
+            </div>
+
+            <div class="item">
+                Tworzenie stron internetowych
+                <span class="price">20 zł / 200 R$</span>
+            </div>
+
+            <div class="item">
+                Pakiet FULL SERVER
+                <span class="price">40 zł / 400 R$</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="zasady">
+    <h2>Ważne informacje</h2>
+
+    <div class="info">
+
+        <p>
+            <strong>Płatność:</strong><br>
+            PSC<br>
+            Robux
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Bezpieczeństwo:</strong><br>
+            Usługi dotyczą wyłącznie serwerów, do których klient
+            ma prawo dostępu. Nie kopiujemy cudzych serwerów
+            bez zgody właściciela.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Zwroty:</strong><br>
+            Od dnia 25.09.2026, godz. 21:36 obowiązuje zakaz zwrotów.
+        </p>
+
+    </div>
+</section>
+
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+
+    <div style="text-align:center;">
+        <p style="color:#aaa; margin-bottom:25px;">
+            Chcesz zamówić usługę? Dołącz na naszego Discorda.
+        </p>
+
+        <a class="button"
+           href="https://discord.gg/KZXU5SXH6"
+           target="_blank">
+            DISCORD STUDIO
+        </a>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Studio. Wszelkie prawa zastrzeżone.
+</footer>
+
+</body>
+</html>
